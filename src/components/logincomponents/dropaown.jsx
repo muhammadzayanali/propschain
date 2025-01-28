@@ -17,7 +17,7 @@ const Dropdown = ({name}) => {
         <div className="relative inline-block text-left">
             <button
                 onClick={toggleDropdown}
-                className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-black rounded-md shadow-sm hover:bg-blue-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-black rounded-full shadow-sm hover:bg-blue-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
             >
                 {name}
                 <svg
@@ -37,7 +37,7 @@ const Dropdown = ({name}) => {
             </button>
 
             {isOpen && (
-                <div className="absolute right-0 z-10 mt-2 w-56 origin-top-right bg-white border border-gray-200 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                <div className="absolute right-0 z-10 mt-2 w-56 origin-top-right bg-white border border-gray-200 rounded-md ring-1 ring-black ring-opacity-5 focus:outline-none">
                     <div className="py-1">
                         {menuItems.map((item) => (
                             <button

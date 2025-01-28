@@ -11,7 +11,9 @@ const CheckpointsTable = ({ question, isSelected, onSelect }) => {
       <label className="text-gray-700">{question}</label>
       <div
         className={`relative w-4 h-4 rounded-full border ${
-          isSelected ? "border-red-600 bg-white flex justify-center items-center" : "border-gray-300"
+          isSelected
+            ? "border-red-600 bg-white flex justify-center items-center"
+            : "border-gray-300"
         }`}
       >
         <input

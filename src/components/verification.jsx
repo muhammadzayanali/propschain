@@ -2,6 +2,7 @@ import React from "react";
 import Siderbar from './logincomponents/sidepage'
 import DigitInputs from './logincomponents/DigitInputs'
 import { useNavigate } from 'react-router-dom';
+import Backarrow from "./logincomponents/backarrow";
 
 const Verification = () => {
     const Navigate = useNavigate();
@@ -12,9 +13,7 @@ const Verification = () => {
         <div className="conatiner-fluid">
             <div className="grid md:grid-cols-12 grid-cols-1">
                 <div className="col-span-5 flex justify-center flex-col m-6 md:p-10 p-0 gap-6">
-                    <div className="my-2">
-                        <button className="rounded-full bg-slate-200 p-1" onClick={() => handleNavigate("/Resets")}><img src="public/arrow.png" alt="Description" className="" /></button>
-                    </div>
+                    <Backarrow hrf="/resets"/>
                     <h1 className="text-3xl font-bold justify-start">Verification Required</h1>
                     <p>We’ve sent a One Time Password (OTP) to the email
                         ahmerilyassial@gmail.com  Please enter it below.</p>

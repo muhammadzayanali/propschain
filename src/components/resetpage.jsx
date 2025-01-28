@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from 'react-router-dom';
+import Backarrow from "./logincomponents/backarrow";
 
 import Siderbar from './logincomponents/sidepage';
 
@@ -15,9 +16,7 @@ const Resets = () => {
             <div className="grid md:grid-cols-12 grid-cols-1">
                 <div className="col-span-5 flex justify-center align-center flex-col m-6 md:p-10 p-0 gap-6">
                     <div className="my-3">
-                        <div className="my-5">
-                            <button className="rounded-full bg-slate-200 p-1" onClick={() => handleNavigate("/")}><img src="public/arrow.png" alt="Description" className="" /></button>
-                        </div>
+                        <Backarrow hrf="/"/>
                         <h1 className="text-3xl font-bold font-title">Enter Email Address</h1>
                         <p className="font-title">We will send you a reset password link to your email address.</p>
                     </div>

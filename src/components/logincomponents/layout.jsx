@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
                     </aside>
                 </div>
                 <div className="flex-1">
-                    <main className="bg-gray-100 mt-20 rounded-l-lg">
+                    <main className="bg-[#F1F5F9] mt-20 rounded-l-lg" >
                         {children}
                     </main>
                 </div>
